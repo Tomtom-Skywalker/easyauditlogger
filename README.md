@@ -1,4 +1,5 @@
-[![npm monthly downloads](https://img.shields.io/npm/dm/easyauditlogger)](https://www.npmjs.com/package/easyauditlogger)
+![npm monthly downloads](https://img.shields.io/npm/dm/easyauditlogger?label=downloads)
+
 
 # easyAuditLogger - Simplify Discord Audit Logging
 
