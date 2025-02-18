@@ -1,13 +1,12 @@
 ![npm monthly downloads](https://img.shields.io/npm/dm/easyauditlogger?label=downloads)
 
-
 # easyAuditLogger - Simplify Discord Audit Logging
 
 easyAuditLogger is a lightweight and easy-to-use module designed to simplify the process of capturing and logging audit events in your Discord bot. Whether you're tracking role changes, message deletions, or user updates, easyAuditLogger handles it smoothly.
 
 ## Installation
 
-You can install easyAuditLogger using npm:
+You can install easyAuditLogger using npm: 
 
 ```bash
 npm install easyauditlogger
@@ -42,9 +41,12 @@ client.on('roleCreate', async (role) => {
 easyAuditLogger supports logging for the following Discord events:
 
 **Channel Events**
-- `channelCreate` - Extended on this is - `category` - `media` - `forum`, these are the other types that channelCreate logs!
+- `channelCreate`
 - `channelUpdate`
 - `channelDelete`
+- `category` (not an event but type on the event)
+- `media` (not an event but type on the event)
+- `forum` (not an event but type on the event)
 
 **Emoji Events**
 - `emojiCreate`
@@ -57,9 +59,9 @@ easyAuditLogger supports logging for the following Discord events:
 - `roleDelete`
 
 **Message Events**
-- `messageCreate` (Currently logs poll creation)
+- `messageCreate` (Currently logs poll creation, forwarded messages)
 - `messageUpdate`
-- `messageDelete` (Works with the example code on the github)
+- `messageDelete` (Works with the example code on the github, + logs deleted forwarded messages)
 - `messageDeleteBulk` 
 
 **Member Events**
@@ -101,11 +103,12 @@ You can easily customize the appearance of the logs by modifying the embed color
   logger.newColour('orange')
   logger.newColour('green')
   logger.newColour('smokeygrape')
+  //Other pre-defined includes: |purple|cyan|magenta|lime|pink|brown|black|white|grey| - NEW
 ```
 
 ## Support
 
-If you encounter any issues or have questions, feel free to join the [Discord server](https://discord.gg/Nq8Qc8Xufs) for support.
+If you encounter any issues or have questions, feel free to join our [Discord server](https://discord.gg/Nq8Qc8Xufs) for support.
 
 Please note that updates may not always be immediate, as this project is maintained alongside other commitments.
 
